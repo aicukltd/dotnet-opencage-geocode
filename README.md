@@ -1,4 +1,5 @@
-OpenCage Data Geocoding Library for .NET 6.0
+[
+https://www.nuget.org/packages/OpenCage.Geocode.DotNetStandard/](https://www.nuget.org/packages/OpenCage.Geocode)OpenCage Data Geocoding Library for .NET 6.0
 =======================
 
 A .NET 6.0 library that provides geocoding and reverse geocoding of locations using the  [OpenCage Geocoder](https://opencagedata.com/)
@@ -10,7 +11,7 @@ geocoder.
 * OpenCageGeocoder key - get yours [FREE](https://opencagedata.com/)
 
 ## Usage (Geocoding)
-Reference the library using [Nuget](https://www.nuget.org/packages/OpenCage.Geocode.DotNetStandard/) 
+Reference the library using [Nuget](https://www.nuget.org/packages/OpenCage.Geocode)
 
 Create an instance of the geocoder library, passing a valid [OpenCage Data Geocoder API key](https://opencagedata.com/) as a parameter to the geocoder library's constructor:
 
