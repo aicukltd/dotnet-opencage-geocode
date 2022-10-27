@@ -3,23 +3,23 @@
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <PackageId>OpenCage.Geocode.DotNetStandard</PackageId>
-    <Authors>Brian Norman</Authors>
+    <PackageId>OpenCage.Geocode</PackageId>
+    <Authors>Brian Norman and Oliver C</Authors>
     <Company>earthware</Company>
-    <Product>OpenCage.Geocode.DotNetStandard</Product>
-    <Description>A .NET Standard library (works in .Net core, .Net 4.6.1 and Xamarin projects) that provides geocoding and reverse geocoding of locations using the OpenCage Geocoder(http://geocoder.opencagedata.com/)</Description>
+    <Product>OpenCage.Geocode</Product>
+    <Description>A .NET 6.0 library that provides geocoding and reverse geocoding of locations using the OpenCage Geocoder(http://geocoder.opencagedata.com/)</Description>
     <Copyright>earthware</Copyright>
     <RepositoryUrl>https://github.com/gingemonster/dotnet-opencage-geocode</RepositoryUrl>
     <PackageProjectUrl>https://github.com/gingemonster/dotnet-opencage-geocode</PackageProjectUrl>
     <PackageTags>geocoding location .net standard</PackageTags>
     <PackageReleaseNotes>Adding in recent community updates and fixes, thanks to all who contributed</PackageReleaseNotes>
-    <AssemblyVersion>1.5.0.0</AssemblyVersion>
-    <FileVersion>1.5.0.0</FileVersion>
-    <Version>1.5.0</Version>
+    <AssemblyVersion>1.6.0.0</AssemblyVersion>
+    <FileVersion>1.6.0.0</FileVersion>
+    <Version>1.6.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="ServiceStack.Text.Core" Version="1.0.44" />
+    <PackageReference Include="ServiceStack.Text.Core" Version="6.4.0" />
   </ItemGroup>
 
 </Project>
