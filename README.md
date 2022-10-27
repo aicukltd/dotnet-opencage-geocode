@@ -15,13 +15,13 @@ Reference the library using [Nuget](https://www.nuget.org/packages/OpenCage.Geoc
 Create an instance of the geocoder library, passing a valid [OpenCage Data Geocoder API key](https://opencagedata.com/) as a parameter to the geocoder library's constructor:
 
 ```C#
-var gc = new Geocoder("YOUR_KEY");
+var geoCoder = new GeoCoder("YOUR_KEY");
 ```
 
 Pass a string containing the query or address to be geocoded to the library's `Geocode` method:
 
 ```C#
-var result = gc.Geocode("82 Clerkenwell Road, London");
+var result = await geoCoder.GeoCodeAsync("82 Clerkenwell Road, London");
 ```
 
 You will get a strongly typed GeocoderResponse object returned.
@@ -32,13 +32,13 @@ Putting all of this together as a console app, a complete sample with a basic an
 
 
 ```C#
-var gc = new Geocoder("YOURKEYHERE");
+var geoCoder = new GeoCoder("YOURKEYHERE");
 
 // simplest example with no optional parameters
-var result = gc.Geocode("newcastle");
+var result = await geoCoder.GeoCodeAsync("newcastle");
 
 //  example with lots of optional parameters
-var result2 = gc.Geocode("newcastle", countrycode: "gb", limit: 2, minConfidence: 6, language: "en", abbrv: true, noAnnotations:true, noRecord: true, addRequest: true);
+var result2 = await geoCoder.GeoCodeAsync("newcastle", countrycode: "gb", limit: 2, minConfidence: 6, language: "en", abbrv: true, noAnnotations:true, noRecord: true, addRequest: true);
 
 ```
 
@@ -47,10 +47,10 @@ Reverse geocoding is almost identical but you pass in a latitude and longitude p
 
 
 ```C#
-var gc = new Geocoder("YOUR_KEY");
-var reserveresult = gc.ReverseGeocode(51.4277844, -0.3336517);
+var geoCoder = new Geocoder("YOUR_KEY");
+var result = geoCoder.ReverseGeoCodeAsync(51.4277844, -0.3336517);
             
-reserveresult.PrintDump(); // ServiceStack human readable object dump to console
+result.PrintDump(); // ServiceStack human readable object dump to console
 ```
 
 There are many parameters for language, limiting results and more see https://opencagedata.com/api for explanations of them all or read the documentation provided for each parameter in Visual Studio.
