@@ -6,7 +6,7 @@ geocoder.
 
 ## Dependencies and Requirements
 * .NET 6.0
-* ServiceStack.Text.Core ver 1.0.44 (added via Nuget)
+* ServiceStack.Text.Core ver 6.4 (added via Nuget)
 * OpenCageGeocoder key - get yours [FREE](https://opencagedata.com/)
 
 ## Usage (Geocoding)
