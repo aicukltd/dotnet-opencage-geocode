@@ -1,32 +1,34 @@
 ﻿namespace OpenCage.Geocode
 {
-    public interface IGeocoder
+    using System.Threading.Tasks;
+
+    public interface IGeoCoder
     {
-        GeocoderResponse Geocode(
+        Task<IGeocoderResponse> GeoCodeAsync(
             string query,
             string language = "en",
             string countrycode = null,
             Bounds bounds = null,
-            bool abbrv = false,
+            bool abbreviated = false,
             int limit = 10,
             int minConfidence = 0,
             bool noAnnotations = false,
-            bool noDedupe = false,
+            bool noDeDuplication = false,
             bool noRecord = false,
             bool addRequest = false
         );
 
-        GeocoderResponse ReverseGeocode(
-            double latitude, 
-            double longitude, 
+        Task<IGeocoderResponse> ReverseGeoCodeAsync(
+            double latitude,
+            double longitude,
             string language = "en",
-            bool abbrv = false,
+            bool abbreviated = false,
             int limit = 10,
             int minConfidence = 0,
             bool noAnnotations = false,
-            bool noDedupe = false,
+            bool noDeDuplication = false,
             bool noRecord = false,
             bool addRequest = false
-            );
+        );
     }
 }

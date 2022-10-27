@@ -5,18 +5,18 @@
     [DataContract]
     public class Point
     {
-        [DataMember(Name = "lat")]
-        public double Latitude { get; set; }
+        public Point()
+        {
+        }
 
-        [DataMember(Name = "lng")]
-        public double Longitude { get; set; }
+        public Point(double latitude, double longitude)
+        {
+            this.Latitude = latitude;
+            this.Longitude = longitude;
+        }
 
-		public Point() { }
+        [DataMember(Name = "lat")] public double Latitude { get; set; }
 
-		public Point(double latitude, double longitude)
-		{
-			Latitude = latitude;
-			Longitude = longitude;
-		}
+        [DataMember(Name = "lng")] public double Longitude { get; set; }
     }
 }

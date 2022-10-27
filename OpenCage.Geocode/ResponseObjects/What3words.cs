@@ -1,7 +1,7 @@
 ﻿namespace OpenCage.Geocode
 {
-	public class What3words
-	{
-		public string Words { get; set; }
-	}
+    public class What3words
+    {
+        public string Words { get; set; }
+    }
 }

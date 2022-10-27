@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace OpenCage.Geocode
+﻿namespace OpenCage.Geocode
 {
     public class EchoRequest
     {
